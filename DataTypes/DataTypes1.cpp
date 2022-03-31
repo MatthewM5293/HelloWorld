@@ -1,12 +1,42 @@
-// HelloWorld.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// DataTypes.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
+#include <string>
+using namespace std;
+
+namespace munoz
+{
+    int i = 10;
+    void f() {}
+}
+
+void f() {}
 
 int main()
 {
-    std::cout << "Hello World!\n";
-    std::cout << "GIT!!!\n";
+    int i = 0;
+    float f = 23;
+    bool b = 5;
+    string name;
+
+    const float TAX = 0.085;
+    char initial;
+
+    int ages[4];
+    ages[0] = 24;
+    ages[1] = 10;
+    //ages[32] = 56;
+
+    cin >> name;
+    cout << name;
+
+    if (b) cout << "true\n";
+
+    munoz::f();
+
+    std::cout << munoz::i << endl;
+    std::cout << "Hello Data!\n";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
